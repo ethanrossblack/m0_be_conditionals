@@ -63,7 +63,7 @@ puts "Is number_students less than or equal to 21?", number_students <= 21, ""
 # Be as technically precise as possible, but don't just copy and paste a definition from the readings.
 # Make sure YOU can explain it that way!
 
-puts "----------------------------------------"," PART 2: Articulating what you are doing","----------------------------------------"
+puts "----------------------------------------"," PART 2: Articulating what you are doing","----------------------------------------",""
 
 # Print the result of the comparison: is 4 less than 9?
 puts 4 < 9
@@ -115,31 +115,51 @@ puts attendees != meals
 # PART 3: Logical Operators
 #--------------------------
 
+puts "","--------------------------"," PART 3: Logical Operators","--------------------------",""
+
 is_hungry = true
 finished_homework = false
 
+puts "Example Values"
 # EXAMPLE:
 # Determine if the user is hungry and has completed their homework
 puts is_hungry && finished_homework
 # Determine if the user is hungry or has completed their homework
-puts is_hungry || finished_homework
+puts is_hungry || finished_homework, ""
+
 
 loves_to_play = true
 loves_dog_park = false
 loves_treats = true
 age = 1
 
+puts "Dog Problems"
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+puts loves_to_play && loves_treats
 
 # Determine if the dog loves to play and loves the dog park
-
+puts loves_to_play && loves_dog_park
 
 # Determine if the dog loves to play or loves the dog park
-
+puts loves_to_play || loves_dog_park
 
 # Determine if the dog loves to play and is a puppy
+puts loves_to_play && is_puppy
 
 # What did your final line of code evaluate to? Why do you think that is? Explain.
 # ANSWER:
+# The final line of code evaluated to 
+  
+    # Traceback (most recent call last):
+    # comparisons.rb:148:in `<main>': undefined local variable or method `is_puppy' for main:Object (NameError)
+
+# because there is no is_puppy variable.
+
+# However, if I were to write the following code, it would evaluate: true
+
+# is_puppy = false
+
+# if age <= 1
+#   is_puppy = true
+# end
